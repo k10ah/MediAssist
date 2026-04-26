@@ -1,0 +1,26 @@
+# MediAssist AI — requirements.txt
+# Install with: pip install -r requirements.txt
+
+# ── Core UI ──────────────────────────────────
+streamlit>=1.35.0
+
+# ── PDF Extraction ────────────────────────────
+pdfplumber>=0.10.3
+
+# ── OCR (Image → Text) ────────────────────────
+pytesseract>=0.3.10
+Pillow>=10.3.0
+
+# ── Data ──────────────────────────────────────
+pandas>=2.2.0
+
+# ── LLM Backends (install the one you use) ────
+openai>=1.30.0                  # for OpenAI GPT-4o / GPT-4o-mini
+google-generativeai>=0.5.4      # for Google Gemini
+
+# ── Environment Variables ─────────────────────
+python-dotenv>=1.0.1
+
+# ── Optional: advanced NLP ────────────────────
+# spacy>=3.7.4                  # uncomment if you want spaCy NER
+# en-core-web-sm                # python -m spacy download en_core_web_sm
